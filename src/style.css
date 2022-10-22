@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #cd7732;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,11 +17,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #3288cd;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #c532cd;
 }
 
 body {
@@ -87,4 +87,55 @@ h5 {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.header-btn {
+  font-family: "Major Mono Display", monospace;
+  background: none;
+  color: white;
+  min-width: 150px;
+  height: auto;
+  border: none;
+}
+
+.header-btn:hover {
+  color: #3288cd;
+  opacity: 60%;
+  border: 0.5px solid white;
+  border-radius: 4%;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 0.5px 0.5px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
