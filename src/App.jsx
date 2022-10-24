@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Typewriter from "typewriter-effect";
 import About from "./components/About";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <h1 className="site-title">
           <Typewriter
             options={{
-              strings: ["Austin Williams<br/>Frontend Developer"],
+              strings: ["Austin G Williams<br/>Frontend Developer"],
               cursor: "_",
               pauseFor: 150000,
               autoStart: true,
@@ -23,6 +24,8 @@ function App() {
         </button>
       </div>
       <About />
+      <Portfolio />
+      <Contact />
     </div>
   );
 }
