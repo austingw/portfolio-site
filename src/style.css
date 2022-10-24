@@ -13,28 +13,29 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --main-color: rgba(255, 255, 255, 0.87);
+  --main-backgroundColor: #cd7732;
+  --secondary-color: #3288cd;
+  --secondary-alt: #c532cd;
 }
 
 a {
   font-weight: 500;
-  color: #3288cd;
+  color: var(--secondary-color);
   text-decoration: inherit;
 }
 a:hover {
-  color: #c532cd;
+  color: var(--secondary-alt);
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -49,15 +50,17 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  opacity: 60%;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 1px auto -webkit-focus-ring-color;
 }
 
 h1 {
   font-family: "Major Mono Display", monospace;
+  font-size: 4.8em;
+  line-height: 1.2;
 }
 
 h2 {
@@ -76,29 +79,26 @@ h5 {
   font-family: "Major Mono Display", monospace;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-.site-title {
+.site-header {
+  text-align: left;
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  place-items: center;
   justify-content: center;
   min-width: 100%;
   min-height: 100vh;
 }
 
+.site-title {
+  text-align: center;
+}
+
 .header-btn {
+  position: absolute;
+  bottom: 12px;
   font-family: "Major Mono Display", monospace;
+  font-size: 1.2em;
   background: none;
   color: white;
   min-width: 150px;
@@ -107,32 +107,15 @@ h5 {
 }
 
 .header-btn:hover {
-  color: #3288cd;
+  border: 1px solid var(--main-color);
   opacity: 60%;
-  border: 0.5px solid white;
-  border-radius: 4%;
 }
 
 .arrow {
-  border: solid white;
+  border: solid var(--main-color);
   border-width: 0 0.5px 0.5px 0;
   display: inline-block;
   padding: 5px;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
 }
 
 .down {

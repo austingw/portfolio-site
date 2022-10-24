@@ -5,11 +5,12 @@ import Typewriter from "typewriter-effect";
 function App() {
   return (
     <div className="App">
-      <div className="site-title">
-        <h1>
+      <div className="site-header">
+        <h1 className="site-title">
           <Typewriter
             options={{
-              strings: ["Austin<br/>Williams<br/>Frontend<br/>Developer"],
+              strings: ["Austin Williams<br/>Frontend Developer"],
+              cursor: "_",
               pauseFor: 150000,
               autoStart: true,
               loop: true,
