@@ -16,8 +16,8 @@
 
   --main-color: rgba(255, 255, 255, 0.87);
   --main-backgroundColor: #cd7732;
-  --secondary-color: #3288cd;
-  --secondary-alt: #c532cd;
+  --secondary-color: #c532cd;
+  --secondary-alt: #3288cd;
 }
 
 a {
