@@ -1,5 +1,4 @@
 import { useState } from "react";
-import github from "./assets/github.svg";
 import Typewriter from "typewriter-effect";
 import About from "./components/About";
 
@@ -24,9 +23,6 @@ function App() {
         </button>
       </div>
       <About />
-      <p>Here's an example of my intro</p>
-      <a href="">Link</a>
-      <i class="devicon-github-original"></i>
     </div>
   );
 }
