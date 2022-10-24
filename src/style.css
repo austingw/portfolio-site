@@ -111,6 +111,15 @@ h5 {
   opacity: 60%;
 }
 
+.about {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  height: auto;
+}
+
 .arrow {
   border: solid var(--main-color);
   border-width: 0 0.5px 0.5px 0;
