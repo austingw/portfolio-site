@@ -3,7 +3,9 @@ export default function Footer() {
     <div className="footer">
       <span>© Copyright {new Date().getFullYear()}, Austin Williams</span>
       <span>
-        <a href="">View this portfolio on GitHub</a>
+        <a href="https://github.com/austingw/austingw.github.io">
+          View this portfolio on GitHub
+        </a>
       </span>
     </div>
   );
