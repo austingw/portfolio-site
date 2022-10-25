@@ -128,6 +128,24 @@ h5 {
   height: auto;
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  height: auto;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  height: auto;
+}
+
 .footer {
   background-color: var(--main-color);
   color: var(--main-backgroundColor);
