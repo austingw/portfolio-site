@@ -15,8 +15,7 @@ export default function Header() {
         />
       </h1>
       <button className="header-btn">
-        Learn More <br />
-        <i className="arrow down"></i>
+        <i className="arrow"></i>
       </button>
     </div>
   );

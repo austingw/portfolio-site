@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Typewriter from "typewriter-effect";
 import Header from "./components/Header";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
