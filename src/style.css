@@ -45,13 +45,21 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background: none;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  width: 130px;
+  height: auto;
   cursor: pointer;
-  transition: border-color 0.25s;
+  margin-right: 12px;
 }
 button:hover {
-  opacity: 60%;
+  background: var(--main-color);
+  color: var(--secondary-alt);
+  border: 1px solid var(--secondary-alt);
+  opacity: 75%;
 }
+
 button:focus,
 button:focus-visible {
   outline: 1px auto -webkit-focus-ring-color;
@@ -74,11 +82,11 @@ h3 {
 }
 
 h4 {
-  font-family: "Major Mono Display", monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 h5 {
-  font-family: "Major Mono Display", monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 .App {
@@ -111,20 +119,21 @@ h5 {
   border-bottom: 1px solid var(--main-color);
 }
 
-.header-btn {
+#header-btn {
   position: absolute;
   bottom: 12px;
-  font-family: "Major Mono Display", monospace;
-  font-size: 1.2em;
-  background: none;
-  color: white;
   min-width: 150px;
   height: auto;
   border: none;
 }
 
-.header-btn:hover {
-  opacity: 60%;
+#header-btn:hover {
+  background: none;
+  opacity: 75%;
+}
+
+#header-btn:focus {
+  outline: none;
 }
 
 .about {
@@ -134,6 +143,11 @@ h5 {
   justify-content: space-between;
   min-width: 100%;
   height: auto;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
 }
 
 .contact {
@@ -143,6 +157,11 @@ h5 {
   justify-content: space-between;
   min-width: 100%;
   height: auto;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
 }
 
 .portfolio {
@@ -153,6 +172,11 @@ h5 {
   justify-content: center;
   min-width: 90%;
   height: auto;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
 }
 
 .portfolio-item {
@@ -208,21 +232,6 @@ h5 {
   justify-content: start;
 }
 
-.portfolio-btns button {
-  background: none;
-  color: var(--main-color);
-  border: 1px solid var(--main-color);
-  width: 130px;
-  height: auto;
-  margin-right: 12px;
-}
-
-.portfolio-btns button:hover {
-  background: var(--main-color);
-  color: var(--secondary-alt);
-  border: 1px solid var(--secondary-alt);
-}
-
 .footer {
   background-color: var(--main-color);
   color: var(--main-backgroundColor);
@@ -245,6 +254,82 @@ h5 {
   opacity: 70%;
 }
 
+.form-container {
+  height: 100%;
+  padding-bottom: 5vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.thanks-message {
+  height: 100%;
+
+  font-size: larger;
+  padding: 5vh;
+  text-align: center;
+  color: var(--main-color);
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-btn button {
+  background: #ffffff18;
+}
+
+.form-btn button:hover {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+input {
+  font-family: "Roboto Mono", monospace;
+  min-width: 100%;
+  height: auto;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  background: #ffffff18;
+}
+
+textarea {
+  min-width: 100%;
+  height: 20vh;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  background: #ffffff18;
+  font-family: "Roboto Mono", monospace;
+}
+
+label {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: var(--main-color);
+  opacity: 75%;
+}
+
 .arrow {
   border: solid var(--main-color);
   border-width: 0 1px 1px 0;
@@ -252,4 +337,54 @@ h5 {
   padding: 25px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  animation: fadeIn 11s;
+  -webkit-animation: fadeIn 11s;
+  -moz-animation: fadeIn 11s;
+  -o-animation: fadeIn 11s;
+  -ms-animation: fadeIn 11s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

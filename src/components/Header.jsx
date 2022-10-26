@@ -14,7 +14,7 @@ export default function Header() {
           }}
         />
       </h1>
-      <button className="header-btn">
+      <button id="header-btn">
         <i className="arrow"></i>
       </button>
     </div>
