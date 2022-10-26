@@ -8,7 +8,9 @@ export default function Contact() {
   }
   return (
     <div className="contact">
-      <h2>Connect</h2>
+      <div className="section-title">
+        <h2>Connect</h2>
+      </div>
       {submitted ? (
         <p className="thanks-message">
           Thanks for reaching out! I will get back to you as soon as possible.
