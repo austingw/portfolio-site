@@ -157,27 +157,21 @@ h5 {
 }
 
 .project-display {
-  max-width: 50vw;
-  height: 100%;
+  max-width: 600px;
+  height: auto;
 }
 
 .project-img {
-  position: absolute;
+  position: static;
   max-width: 600px;
-  top: 0;
-  left: 0;
-  background-position: right 20px bottom 10px;
-  background-color: var(--main-color);
 }
 
-.img-bg {
-  box-sizing: border-box;
+.left-img {
+  box-shadow: -120px -20px var(--secondary-alt);
+}
 
-  position: relative;
-  width: 700px;
-  height: 400px;
-  margin-left: 20px;
-  background-color: var(--secondary-alt);
+.right-img {
+  box-shadow: 120px -20px var(--secondary-alt);
 }
 
 .footer {
