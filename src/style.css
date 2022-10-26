@@ -156,14 +156,21 @@ h5 {
   justify-content: center;
 }
 
+.portfolio-item-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-display {
-  max-width: 600px;
+  max-width: 540px;
   height: auto;
 }
 
 .project-img {
-  position: static;
-  max-width: 600px;
+  max-width: 480px;
+  height: auto;
 }
 
 .left-img {
