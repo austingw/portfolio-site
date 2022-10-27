@@ -90,6 +90,11 @@ h5 {
   font-family: "Roboto Mono", monospace;
 }
 
+svg {
+  height: 48px;
+  width: 48px;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -263,6 +268,24 @@ h5 {
   justify-content: start;
 }
 
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2vh;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 6px;
+  padding-top: 10px;
+}
+
 .footer {
   background-color: var(--main-color);
   color: var(--main-backgroundColor);
@@ -274,6 +297,7 @@ h5 {
   justify-content: center;
   min-width: 100%;
   height: 10vh;
+  opacity: 75%;
 }
 
 .footer a {
@@ -287,7 +311,7 @@ h5 {
 
 .form-container {
   height: 100%;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
   max-width: 60%;
   display: flex;
   flex-direction: column;
