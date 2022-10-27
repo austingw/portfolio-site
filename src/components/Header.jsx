@@ -1,4 +1,10 @@
 import Typewriter from "typewriter-effect";
+import {
+  Link,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 export default function Header() {
   return (
@@ -14,8 +20,19 @@ export default function Header() {
           }}
         />
       </h1>
+
       <button id="header-btn">
-        <i className="arrow"></i>
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          offset={-30}
+          duration={500}
+        >
+          {" "}
+          <i className="arrow" />
+        </Link>
       </button>
     </div>
   );

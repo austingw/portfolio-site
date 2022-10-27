@@ -23,7 +23,7 @@
 
 a {
   font-weight: 500;
-  color: var(--secondary-color);
+  color: var(--main-backgroundColor);
   text-decoration: underline;
 }
 a:hover {
@@ -135,6 +135,36 @@ h5 {
 
 #header-btn:focus {
   outline: none;
+}
+
+.navbar {
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  opacity: 75%;
+  background-color: var(--main-color);
+  color: var(--main-backgroundColor);
+  min-height: 60px;
+  max-height: 10vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-right: 10px;
+  font-family: "Major Mono Display", monospace;
+  text-transform: capitalize;
+  font-size: 1.15em;
+}
+
+.navbar a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active {
+  color: var(--secondary-color);
 }
 
 .about {

@@ -11,6 +11,7 @@ export default function Contact() {
       <div className="section-title">
         <h2>Connect</h2>
       </div>
+
       {submitted ? (
         <p className="thanks-message">
           Thanks for reaching out! I will get back to you as soon as possible.
