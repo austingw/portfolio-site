@@ -5,8 +5,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #cd7732;
+  color: var(--main-color);
+  background-color: var(--main-backgroundColor);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,8 +14,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --main-color: rgba(255, 255, 255, 0.87);
+  --main-color: rgb(248, 238, 230);
   --main-backgroundColor: #cd7732;
+  --main-shadow: rgba(248, 238, 230, 0.745);
   --secondary-color: #c532cd;
   --secondary-alt: #3288cd;
 }
@@ -218,11 +219,11 @@ h5 {
 }
 
 .left-img {
-  box-shadow: -120px -20px var(--main-color);
+  box-shadow: -120px -20px var(--main-shadow);
 }
 
 .right-img {
-  box-shadow: 120px -20px var(--main-color);
+  box-shadow: 120px -20px var(--main-shadow);
 }
 
 .portfolio-btns {
@@ -257,7 +258,7 @@ h5 {
 .form-container {
   height: 100%;
   padding-bottom: 5vh;
-  min-width: 100%;
+  max-width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -288,15 +289,6 @@ h5 {
   align-items: center;
 }
 
-.form-btn button {
-  background: #ffffff18;
-}
-
-.form-btn button:hover {
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-}
-
 input {
   font-family: "Roboto Mono", monospace;
   min-width: 100%;
@@ -305,17 +297,18 @@ input {
   margin: 5px 0 22px 0;
   border: 1px solid var(--main-color);
   border-radius: 8px;
-  background: #ffffff18;
+  background: var(--main-backgroundColor);
 }
 
 textarea {
   min-width: 100%;
+  max-width: 1080px;
   height: 20vh;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: 1px solid var(--main-color);
   border-radius: 8px;
-  background: #ffffff18;
+  background: var(--main-backgroundColor);
   font-family: "Roboto Mono", monospace;
 }
 
@@ -337,11 +330,11 @@ input::placeholder {
   padding: 25px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  animation: fadeIn 11s;
-  -webkit-animation: fadeIn 11s;
-  -moz-animation: fadeIn 11s;
-  -o-animation: fadeIn 11s;
-  -ms-animation: fadeIn 11s;
+  animation: fadeIn 15s;
+  -webkit-animation: fadeIn 15s;
+  -moz-animation: fadeIn 15s;
+  -o-animation: fadeIn 15s;
+  -ms-animation: fadeIn 15s;
 }
 
 @keyframes fadeIn {
