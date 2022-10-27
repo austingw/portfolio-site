@@ -20,7 +20,7 @@ export default function Contact() {
         <ContactForm handleSubmit={handleSubmit} />
       )}
       <div className="social-media">
-        <b>You can also find me on</b>
+        <h4>You can also find me on</h4>
         <div className="social-icons">
           <a href="https://linkedin.com/in/austingw">
             <svg viewBox="0 0 128 128">

@@ -28,7 +28,7 @@ export default function ContactForm(props) {
   return (
     <div className="form-container">
       <h4 className="form-title">
-        <b>Please fill out the form below to get in touch:</b>
+        Please fill out the form below to get in touch:
       </h4>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
