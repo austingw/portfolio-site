@@ -15,8 +15,10 @@ export default function Portfolio() {
         <div className="project-summary-left">
           <h3>Client: Greenbrier Church</h3>
           <p>
-            <b>Summary:</b> A quiz game made with React that integrates the Open
-            Quiz API
+            <b>Summary:</b> A fully featured multi-page website comissioned by a
+            local church built with React, React Router, Vite, and CSS. Unique
+            features include YouTube API integration to automatically load their
+            latest service livestream.
           </p>
           <div className="portfolio-btns">
             <a href="https://www.greenbrierchurch.com/">
@@ -32,8 +34,11 @@ export default function Portfolio() {
         <div className="project-summary-right">
           <h3>Project: Kitchen Sink Quiz</h3>
           <p>
-            <b>Summary:</b> A quiz game made with React that integrates the Open
-            Quiz API
+            <b>Summary:</b> A quiz game made with React, Vite, and CSS that
+            pulls five random questions from the Open Trivia Database. This
+            project really challenged me to think through how to parse and map
+            data from an API to React components, work with props, and use state
+            to handle various aspects of the game's logic.
           </p>
           <div className="portfolio-btns">
             <a href="https://austingw.com/quiz-app/">
@@ -52,8 +57,10 @@ export default function Portfolio() {
         <div className="project-summary-left">
           <h3>Project: Tenzies</h3>
           <p>
-            <b>Summary:</b> A quiz game made with React that integrates the Open
-            Quiz API
+            <b>Summary:</b> A fun little dice game made with React, Vite, and
+            CSS. This project, like the quiz game above, helped make React
+            "click" for me. Working through this project allowed me to play
+            around with fundamental concepts like state, props, and hooks.
           </p>
           <div className="portfolio-btns">
             <a href="https://austingw.com/tenzies/">
@@ -72,8 +79,10 @@ export default function Portfolio() {
         <div className="project-summary-right">
           <h3>Project: Raincheck</h3>
           <p>
-            <b>Summary:</b> A quiz game made with React that integrates the Open
-            Quiz API
+            <b>Summary:</b> This is an early project using HTML, Javascript, CSS
+            and the OpenWeather API. While it is a very simple app, it
+            demonstrates a fundamental understanding of non-framework JS and
+            asynchronous techniques.
           </p>
           <div className="portfolio-btns">
             <a href="https://austingw.com/raincheck/">
