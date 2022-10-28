@@ -91,6 +91,10 @@ h5 {
   font-family: "Roboto Mono", monospace;
 }
 
+p {
+  margin: 0.5em;
+}
+
 svg {
   height: 48px;
   width: 48px;
@@ -182,7 +186,7 @@ svg:hover {
   flex-direction: column;
   place-items: center;
   justify-content: space-between;
-  min-width: 100%;
+  min-width: 90%;
   height: auto;
   animation: fadeIn 1s;
   -webkit-animation: fadeIn 1s;
@@ -191,12 +195,36 @@ svg:hover {
   -ms-animation: fadeIn 1s;
 }
 
+.about-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  min-width: 90%;
+  padding-top: 2vh;
+}
+
+.about-content {
+  height: 100%;
+  max-width: 47vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 2vw;
+}
+
+.about img {
+  max-width: 25vw;
+  height: auto;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-width: 100%;
+  min-width: 90%;
   height: auto;
   animation: fadeIn 1s;
   -webkit-animation: fadeIn 1s;
