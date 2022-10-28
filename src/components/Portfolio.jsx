@@ -1,4 +1,6 @@
-import quiz from "../assets/quiz.png";
+import quiz from "../assets/quiz-app.gif";
+import weather from "../assets/weather.gif";
+import tenzies from "../assets/tenzies.gif";
 
 export default function Portfolio() {
   return (
@@ -45,7 +47,7 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-item-reverse">
         <div className="project-display">
-          <img src={quiz} className="project-img right-img" />
+          <img src={tenzies} className="project-img right-img" />
         </div>
         <div className="project-summary-left">
           <h3>Project: Tenzies</h3>
@@ -65,7 +67,7 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-item">
         <div className="project-display">
-          <img src={quiz} className="project-img left-img" />
+          <img src={weather} className="project-img left-img" />
         </div>
         <div className="project-summary-right">
           <h3>Project: Raincheck</h3>
