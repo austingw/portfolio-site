@@ -35,8 +35,9 @@ body {
   display: flex;
   place-items: center;
   justify-content: center;
-  min-width: 320px;
+  min-width: 100%;
   min-height: 100vh;
+  max-width: 100vw;
 }
 
 button {
@@ -109,8 +110,8 @@ svg:hover {
   flex-direction: column;
   place-items: center;
   justify-content: center;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .site-header {
@@ -126,6 +127,7 @@ svg:hover {
 
 .site-title {
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 .section-title {
@@ -219,20 +221,6 @@ svg:hover {
   height: auto;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 90%;
-  height: auto;
-  animation: fadeIn 1s;
-  -webkit-animation: fadeIn 1s;
-  -moz-animation: fadeIn 1s;
-  -o-animation: fadeIn 1s;
-  -ms-animation: fadeIn 1s;
-}
-
 .portfolio {
   box-sizing: border-box;
   display: flex;
@@ -301,6 +289,20 @@ svg:hover {
   justify-content: start;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  height: auto;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
 .social-media {
   display: flex;
   flex-direction: column;
@@ -344,7 +346,7 @@ svg:hover {
 .form-container {
   height: 100%;
   padding-bottom: 2vh;
-  max-width: 60%;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -353,11 +355,11 @@ svg:hover {
 
 .form-title {
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 .thanks-message {
   height: 100%;
-
   font-size: larger;
   padding: 5vh;
   text-align: center;
@@ -388,7 +390,6 @@ input {
 
 textarea {
   min-width: 100%;
-  max-width: 1080px;
   height: 20vh;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -396,6 +397,7 @@ textarea {
   border-radius: 8px;
   background: var(--main-backgroundColor);
   font-family: "Roboto Mono", monospace;
+  resize: vertical;
 }
 
 label {
@@ -465,5 +467,66 @@ input::placeholder {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .site-title {
+    font-size: 12vw;
+  }
+
+  .navbar {
+    justify-content: center;
+    font-size: 4.5vw;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+  }
+
+  .about-content {
+    min-width: 90vw;
+  }
+
+  .about img {
+    max-width: 80vw;
+  }
+
+  .portfolio-item,
+  .portfolio-item-reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-summary-left,
+  .project-summary-right {
+    max-width: 90vw;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+
+  .project-img,
+  .project-display {
+    max-width: 80vw;
+  }
+
+  .right-img,
+  .left-img {
+    box-shadow: 24px -4px var(--main-shadow);
+  }
+
+  .portfolio-btns {
+    justify-content: center;
+    padding-top: 2vh;
+  }
+
+  .form-container {
+    max-width: 60%;
+  }
+
+  .form-btn button {
+    width: 80%;
+    text-align: center;
+    margin-left: 9vw;
   }
 }
