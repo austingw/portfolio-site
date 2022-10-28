@@ -17,8 +17,8 @@ export default function About() {
               friends in middle school to soldering together guitar electronics,
               planning, testing and troubleshooting are simply a way of life for
               me. Web development has given me the opportunity to use my natural
-              dispotion to craft new experiences, conveint features, and
-              responsive designs for both myself and clients.
+              inclinations and attributes to craft new experiences, conveint
+              features, and responsive designs for both myself and clients.
             </p>
             <p>
               Technologies I use include React, Javascript, CSS, SASS,

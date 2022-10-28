@@ -36,9 +36,8 @@ export default function Portfolio() {
           <p>
             <b>Summary:</b> A quiz game made with React, Vite, and CSS that
             pulls five random questions from the Open Trivia Database. This
-            project really challenged me to think through how to parse and map
-            data from an API to React components, work with props, and use state
-            to handle various aspects of the game's logic.
+            project really challenged me to think through how to parse data from
+            an API and map it to React components.
           </p>
           <div className="portfolio-btns">
             <a href="https://austingw.com/quiz-app/">
@@ -79,9 +78,9 @@ export default function Portfolio() {
         <div className="project-summary-right">
           <h3>Project: Raincheck</h3>
           <p>
-            <b>Summary:</b> This is an early project using HTML, Javascript, CSS
-            and the OpenWeather API. While it is a very simple app, it
-            demonstrates a fundamental understanding of non-framework JS and
+            <b>Summary:</b> This is an early project of mine that uses HTML,
+            Javascript, CSS and the OpenWeather API. While it is a very simple
+            app, it demonstrates a fundamental understanding of vanilla JS and
             asynchronous techniques.
           </p>
           <div className="portfolio-btns">
