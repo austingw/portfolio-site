@@ -96,6 +96,10 @@ svg {
   width: 48px;
 }
 
+svg:hover {
+  opacity: 75%;
+}
+
 .App {
   display: flex;
   flex-direction: column;
