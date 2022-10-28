@@ -15,8 +15,8 @@ export default function About() {
               I've always had a passion for research, problem solving, and
               creative expression. From making Wordpress sites for family
               friends in middle school to soldering together guitar electronics,
-              planning, testing and troubleshooting are simply a way of life for
-              me. Web development has given me the opportunity to use my natural
+              testing and troubleshooting are simply a way of life for me. Web
+              development has given me the opportunity to use my natural
               inclinations and attributes to craft new experiences, conveint
               features, and responsive designs for both myself and clients.
             </p>
