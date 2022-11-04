@@ -1,3 +1,4 @@
+import church from "../assets/church.gif";
 import quiz from "../assets/quiz-app.gif";
 import weather from "../assets/weather.gif";
 import tenzies from "../assets/tenzies.gif";
@@ -10,7 +11,7 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-item-reverse">
         <div className="project-display">
-          <img src={quiz} className="project-img right-img" />
+          <img src={church} className="project-img right-img" />
         </div>
         <div className="project-summary-left">
           <h3>Client: Greenbrier Church</h3>
@@ -56,7 +57,7 @@ export default function Portfolio() {
         <div className="project-summary-left">
           <h3>Project: Tenzies</h3>
           <p>
-            <b>Summary:</b> A fun little dice game made with{" "}
+            <b>Summary:</b> A fun, relaxing dice game made with{" "}
             <b>React, Vite, and CSS</b>. This project, like the quiz game above,
             helped make React "click" for me. Working through this project
             allowed me to play around with fundamental concepts like state,
