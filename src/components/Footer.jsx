@@ -4,7 +4,7 @@ export default function Footer() {
       <span>© Copyright {new Date().getFullYear()}, Austin Williams</span>
       <span>
         <a href="https://github.com/austingw/austingw.github.io">
-          View this portfolio on GitHub
+          View this site on GitHub
         </a>
       </span>
     </div>
