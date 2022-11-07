@@ -52,7 +52,7 @@ export default function ContactForm(props) {
           placeholder="Enter your message here"
         />
         <div className="form-btn">
-          <button type="submit" value="Send">
+          <button type="submit" value="Send" aria-label="Form Submit Button">
             Submit
           </button>
         </div>

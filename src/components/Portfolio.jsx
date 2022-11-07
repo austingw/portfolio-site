@@ -11,7 +11,11 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-item-reverse">
         <div className="project-display">
-          <img src={church} className="project-img right-img" />
+          <img
+            src={church}
+            className="project-img right-img"
+            alt="Church Website GIF"
+          />
         </div>
         <div className="project-summary-left">
           <h3>Client: Greenbrier Church</h3>
@@ -22,7 +26,10 @@ export default function Portfolio() {
             load their latest service and responsive design.
           </p>
           <div className="portfolio-btns">
-            <a href="https://www.greenbrierchurch.com/">
+            <a
+              href="https://www.greenbrierchurch.com/"
+              aria-label="Opens project website"
+            >
               <button>View Site</button>
             </a>
           </div>
@@ -30,7 +37,7 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-item">
         <div className="project-display">
-          <img src={quiz} className="project-img left-img" />
+          <img src={quiz} className="project-img left-img" alt="Quiz App GIF" />
         </div>
         <div className="project-summary-right">
           <h3>Project: Kitchen Sink Quiz</h3>
@@ -41,10 +48,16 @@ export default function Portfolio() {
             an API and map it to React components.
           </p>
           <div className="portfolio-btns">
-            <a href="https://austingw.com/quiz-app/">
+            <a
+              href="https://austingw.com/quiz-app/"
+              aria-label="Opens demo for project"
+            >
               <button>Demo</button>
             </a>
-            <a href="https://github.com/austingw/quiz-app">
+            <a
+              href="https://github.com/austingw/quiz-app"
+              aria-label="Opens GitHub repo for project"
+            >
               <button>View Code</button>
             </a>
           </div>
@@ -52,7 +65,11 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-item-reverse">
         <div className="project-display">
-          <img src={tenzies} className="project-img right-img" />
+          <img
+            src={tenzies}
+            className="project-img right-img"
+            alt="Tenzies GIF"
+          />
         </div>
         <div className="project-summary-left">
           <h3>Project: Tenzies</h3>
@@ -64,10 +81,16 @@ export default function Portfolio() {
             props, and hooks.
           </p>
           <div className="portfolio-btns">
-            <a href="https://austingw.com/tenzies/">
+            <a
+              href="https://austingw.com/tenzies/"
+              aria-label="Opens demo for project"
+            >
               <button>Demo</button>
             </a>
-            <a href="https://github.com/austingw/tenzies">
+            <a
+              href="https://github.com/austingw/tenzies"
+              aria-label="Opens GitHub repo for project"
+            >
               <button>View Code</button>
             </a>
           </div>
@@ -75,7 +98,11 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-item">
         <div className="project-display">
-          <img src={weather} className="project-img left-img" />
+          <img
+            src={weather}
+            className="project-img left-img"
+            alt="Weather GIF"
+          />
         </div>
         <div className="project-summary-right">
           <h3>Project: Raincheck</h3>
@@ -86,10 +113,16 @@ export default function Portfolio() {
             vanilla JS and asynchronous techniques.
           </p>
           <div className="portfolio-btns">
-            <a href="https://austingw.com/raincheck/">
+            <a
+              href="https://austingw.com/raincheck/"
+              aria-label="Opens demo for project"
+            >
               <button>Demo</button>
             </a>
-            <a href="https://github.com/austingw/raincheck">
+            <a
+              href="https://github.com/austingw/raincheck"
+              aria-label="Opens GitHub repo for project"
+            >
               <button>View Code</button>
             </a>
           </div>

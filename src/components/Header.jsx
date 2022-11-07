@@ -29,6 +29,7 @@ export default function Header() {
           hashSpy={true}
           offset={-30}
           duration={500}
+          aria-label="Scrolls down the page"
         >
           {" "}
           <i className="arrow" />
