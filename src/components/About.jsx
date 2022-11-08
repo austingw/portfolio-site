@@ -1,4 +1,4 @@
-import quiz from "../assets/quiz.png";
+import me from "../assets/site-selfie.png";
 
 export default function About() {
   return (
@@ -8,7 +8,7 @@ export default function About() {
           <h2>About Me</h2>
         </div>
         <div className="about-wrapper">
-          <img src={quiz} alt="A picture of me" />
+          <img src={me} alt="A picture of me" />
           <div className="about-content">
             <p>👋 Hi, I’m Austin Williams, a Frontend Developer! </p>
             <p>

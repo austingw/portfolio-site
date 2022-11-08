@@ -199,7 +199,7 @@ svg:hover {
 
 .about-wrapper {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   min-width: 90%;
@@ -213,12 +213,17 @@ svg:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-right: 2vw;
+  padding-left: 2vw;
 }
 
 .about img {
-  max-width: 25vw;
+  margin-top: 2vh;
+
+  max-width: 20vw;
   height: auto;
+  border: 2px solid var(--secondary-alt);
+  background-color: var(--main-shadow);
+  border-radius: 50%;
 }
 
 .portfolio {
@@ -486,10 +491,12 @@ input::placeholder {
 
   .about-content {
     min-width: 90vw;
+    padding-left: 0;
   }
 
   .about img {
-    max-width: 80vw;
+    max-width: 70vw;
+    margin-bottom: 2vh;
   }
 
   .portfolio-item,
