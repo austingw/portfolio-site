@@ -12,11 +12,11 @@ Overall, my main goal on this project was to strike a balance between aesthetics
 
 # Features #
 
--Exciting, yet clean visual aesthetics
--Single page app with multiple sections
--Navigation bar that auto-scrolls to a particular component
--Clear, convise portfolio with GIFs, summaries, and links to both a demo version and each project's repo
--Functional contact form that connects to EmailJS to deliver messages directly to my inbox
+- Exciting, yet clean visual aesthetics
+- Single page app with multiple sections
+- Navigation bar that auto-scrolls to a particular component
+- Clear, convise portfolio with GIFs, summaries, and links to both a demo version and each project's repo
+- Functional contact form that connects to EmailJS to deliver messages directly to my inbox
 
 # Built with #
 
